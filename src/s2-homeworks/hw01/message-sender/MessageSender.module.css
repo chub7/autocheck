@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.sendForm {
+
+text-align: center;
+}
+
+.textarea {
+    width: 970px;
+    height: 40px;
+    border-radius: 40px;
+    resize: none;
+    background-color: #F5F7FB;
+    padding: 15px;
+    overflow: hidden;
+    border: none;
+    vertical-align: middle;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+
+
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    color: #DDEEFF;
+    background-color: #0066cc;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgba(0, 102, 204, 0.75);
+}
+
+.button:active {
+    background-color: rgb(1, 91, 183);
+}

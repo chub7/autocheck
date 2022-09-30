@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.friendMessage {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.friendImageAndText {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.friendImageAndText img {
+    align-self: end;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+}
+
+.friendText {
+    padding: 10px;
+    color: #000000;
+    max-width: 400px;
+    position: relative;
+    background: #e3e3ec;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 5px;
+}
+
+.friendText:after {
+
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    bottom: 0;
+    left: -10px;
+
+}
+
+.friendName {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.friendMessageText {
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.friendTime {
+    color: #000000;
+    font-size: 10px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+
+}
