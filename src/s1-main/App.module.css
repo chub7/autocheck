@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .App {
     --header_height: 60px;
+    padding-left: 70px;
 }
 
 .hw {
 margin: 40px;
+
 }
 
 .hwTitle {
