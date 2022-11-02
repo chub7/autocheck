@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 .button {
+    margin: 3px;
     border-radius: 3px;
     border: none;
     width: 132px;
