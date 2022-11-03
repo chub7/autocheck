@@ -25,6 +25,12 @@ const initialPeople: UserType[] = [
     {_id: 3, name: 'Виктор', age: 44},
     {_id: 4, name: 'Дмитрий', age: 40},
     {_id: 5, name: 'Ирина', age: 55},
+    // {_id: 0, name: 'Кот', age: 1},
+    // {_id: 1, name: 'Александр', age: 2},
+    // {_id: 2, name: 'Коля', age: 3},
+    // {_id: 3, name: 'Виктор', age: 19},
+    // {_id: 4, name: 'Дмитрий', age: 20},
+    // {_id: 5, name: 'Ирина', age: 21},
 ]
 
 const HW8 = () => {
