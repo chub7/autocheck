@@ -13,6 +13,8 @@
 }
 
 .users {
+    float: right;
+    position: inherit;
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;

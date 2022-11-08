@@ -60,7 +60,7 @@ const HW8 = () => {
     }
 
     return (
-        <div id={'hw3'}>
+        <div id={'hw8'}>
             <div className={s2.hwTitle}>Homework #8</div>
             <div className={s2.hw}>
                 <div className={s.container}>
@@ -86,6 +86,8 @@ const HW8 = () => {
                         >
                             Check 18+
                         </SuperButton>
+
+
                     </div>
 
                     <table id={'hw8-users'} className={s.users}>
@@ -95,9 +97,10 @@ const HW8 = () => {
                             <td className={s.ageCol}>Age</td>
                         </tr>
                         </thead>
-
                         <tbody>{finalPeople}</tbody>
                     </table>
+
+
                 </div>
             </div>
         </div>
