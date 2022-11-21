@@ -50,7 +50,6 @@ function HW11() {
                             id={'hw11-double-slider'}
                             onChange={change}
                             value={[value1,value2]}
-
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
