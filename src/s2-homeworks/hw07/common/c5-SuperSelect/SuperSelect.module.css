@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .select {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    min-width: 171px;
+    min-height: 36px;
+    background: transparent
 }
 
 .select:focus {
