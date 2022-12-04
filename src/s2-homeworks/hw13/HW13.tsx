@@ -39,8 +39,8 @@ const HW13 = () => {
                 setDis(false)
                 setCode('Код 200!')
                 setImage(success200)
-                setInfo(`${res.data.errorText} ${res.data.info}`)
-                console.log(res)
+                setInfo(`${res.data.info}`)
+                setText(`${res.data.errorText}`)
                 // дописать
 
             })
@@ -49,8 +49,9 @@ const HW13 = () => {
                     setDis(false)
                     setCode('Код 500!')
                     setImage(error500)
-                    setInfo(`${e.response.data.errorText} ${e.response.data.info}`)
-                 } else {
+                    setInfo(`${e.response.data.info}`)
+                    setText(`${e.response.data.errorText}`)
+                } else {
                     throw e; // проброс (*)
                 }
                 // дописать
@@ -61,16 +62,18 @@ const HW13 = () => {
                     setDis(false)
                     setCode('Код 400!')
                     setImage(error400)
-                    setInfo(`${e.response.data.errorText} ${e.response.data.info}`)
+                    setInfo(`${e.response.data.info}`)
+                    setText(`${e.response.data.errorText}`)
                 } else {
                     throw e
                 }
             })
-            .catch(()=>{
+            .catch(()=> {
                 setDis(false)
                 setCode('Error!')
                 setImage(errorUnknown)
-                setInfo(`Network Error AxiosError`)
+                setInfo(`AxiosError`)
+                setText(`Network Error`)
             })
     }
 
