@@ -52,6 +52,12 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
+                if (res) {
+                    setTotalCount(res.data.totalCount)
+                    setTechs(res.data.techs)
+
+                }
+                setLoading(false)
 
                 // сохранить пришедшие данные
 
@@ -61,25 +67,28 @@ const HW15 = () => {
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
+        setPage(newPage)
+        setCount(newCount)
         // setPage(
         // setCount(
 
         // sendQuery(
         // setSearchParams(
-
+        setSearchParams(`sort: '', page: ${newPage}, count: ${newCount}`)
+        sendQuery({sort: '', page: newPage, count: newCount})
         //
     }
 
     const onChangeSort = (newSort: string) => {
         // делает студент
-
+        setSort(newSort)
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
-
+        setPage(1)
         // sendQuery(
         // setSearchParams(
-
+        sendQuery({sort: newSort, page: 1, count})
+        setSearchParams(`sort:${newSort},page:${1},count:${count}`)
         //
     }
 
@@ -107,7 +116,7 @@ const HW15 = () => {
             <div className={s2.hwTitle}>Homework #15</div>
 
             <div className={s2.hw}>
-                {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+                {idLoading && <div id={'hw15-loading'} className={s.loading}></div>}
 
                 <SuperPagination
                     page={page}

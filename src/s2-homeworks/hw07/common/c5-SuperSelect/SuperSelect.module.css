@@ -6,7 +6,7 @@
     font-size: 14px;
     line-height: 17px;
 
-    min-width: 171px;
+    min-width: auto;
     min-height: 36px;
     background: transparent
 }
